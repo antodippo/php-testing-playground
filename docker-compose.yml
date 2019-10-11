@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  testing-playground:
+    build: docker/testing-playground
+    working_dir: /var/www/testing-playground
+    volumes:
+      - .:/var/www/testing-playground:delegated
