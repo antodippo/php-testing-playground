@@ -14,14 +14,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Build containers
+      run:  docker-compose build
+
     - name: Validate composer.json and composer.lock
-      run: composer validate
+      run:  docker-compose run --rm testing-playground composer validate
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
+      run:  docker-compose run --rm testing-playground composer install --prefer-dist --no-progress --no-suggest
     
     - name: Run PHPUnit tests
-      run: vendor/bin/phpunit
+      run:  docker-compose run --rm testing-playground vendor/bin/phpunit
     
     - name: Run Infection
-      run: vendor/bin/infection
+      run:  docker-compose run --rm testing-playground vendor/bin/infection

@@ -1,10 +1,10 @@
-FROM php:7.2-cli
+FROM php:7.4-cli
 
 RUN apt-get update
 RUN apt-get install -y git zip unzip
 
 RUN pecl channel-update pecl.php.net
-RUN pecl install xdebug-2.6.1 && docker-php-ext-enable xdebug
+RUN pecl install xdebug && docker-php-ext-enable xdebug
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 ENV COMPOSER_ALLOW_SUPERUSER=1
