@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72409747adead9680957efe672a2c3f9",
+    "content-hash": "bc84542e169ee9eb8b13926adea5a4b0",
     "packages": [],
     "packages-dev": [
         {
@@ -2256,28 +2256,35 @@
         },
         {
             "name": "steos/quickcheck",
-            "version": "v1.0.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/steos/php-quickcheck.git",
-                "reference": "386d6bbb72167b3e96a01606ed71b22240fb3fdb"
+                "reference": "3dc07c89573365825251470a5f27193c3781facb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/steos/php-quickcheck/zipball/386d6bbb72167b3e96a01606ed71b22240fb3fdb",
-                "reference": "386d6bbb72167b3e96a01606ed71b22240fb3fdb",
+                "url": "https://api.github.com/repos/steos/php-quickcheck/zipball/3dc07c89573365825251470a5f27193c3781facb",
+                "reference": "3dc07c89573365825251470a5f27193c3781facb",
                 "shasum": ""
             },
             "require": {
-                "php-64bit": ">=5.5.0"
+                "php-64bit": ">=7.3.0",
+                "symfony/console": "^5.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8"
+                "phpunit/phpunit": "^9.1"
             },
+            "suggest": {
+                "ext-gmp": "*"
+            },
+            "bin": [
+                "bin/quickcheck"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "QCheck\\": "src/QCheck/"
+                    "QuickCheck\\": "src/QuickCheck/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2285,7 +2292,7 @@
                 "BSD-3-Clause"
             ],
             "description": "a generative testing library",
-            "time": "2020-01-09T13:27:18+00:00"
+            "time": "2020-05-20T17:02:11+00:00"
         },
         {
             "name": "symfony/console",
