@@ -14,7 +14,7 @@
     "require-dev": {
         "phpunit/phpunit": "^9.0",
         "infection/infection": "^0.16.1",
-        "steos/quickcheck": "^1.0",
+        "steos/quickcheck": "^2.0",
         "giorgiosironi/eris": "^0.11.0"
     },
     "autoload": {
