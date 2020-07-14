@@ -1,6 +1,6 @@
 # Testing playgroud
 
-This is a simple playground repository for PHP, and it includes [PHPUnit](https://phpunit.de/) and [Infection](https://infection.github.io/) framework.
+This is a simple playground repository for PHP, and it includes [PHPUnit](https://phpunit.de/), [Infection](https://infection.github.io/) and [PHPSpec](http://phpspec.net/) frameworks.
 
 ### Usage
 
@@ -19,6 +19,10 @@ Run PHPUnit tests:
 Run Infection mutation tests:
 
 ```docker-compose run --rm testing-playground vendor/bin/infection```
+
+Run PHPSpec tests:
+
+```docker-compose run --rm testing-playground vendor/bin/phpspec run```
 
 ### NuclearReactor example
 
