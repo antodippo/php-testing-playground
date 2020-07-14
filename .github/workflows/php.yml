@@ -22,7 +22,10 @@ jobs:
 
     - name: Install dependencies
       run:  docker-compose run --rm testing-playground composer install --prefer-dist --no-progress --no-suggest
-    
+
+    - name: Run PHPUnit tests
+      run:  docker-compose run --rm testing-playground vendor/bin/phpspec run
+
     - name: Run PHPUnit tests
       run:  docker-compose run --rm testing-playground vendor/bin/phpunit
     
