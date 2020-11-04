@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75f1ea36f2ea2c2b94438d2b50087066",
+    "content-hash": "22b5a04933caad6c481885736b7bdd13",
     "packages": [],
     "packages-dev": [
         {
@@ -1027,30 +1027,30 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "6.3.0",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "fc7b1eff1778db6ab8376bc92f7e31ddcd1e73cd"
+                "reference": "9b82625c790d9092d3b9a50358358834d4713766"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/fc7b1eff1778db6ab8376bc92f7e31ddcd1e73cd",
-                "reference": "fc7b1eff1778db6ab8376bc92f7e31ddcd1e73cd",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/9b82625c790d9092d3b9a50358358834d4713766",
+                "reference": "9b82625c790d9092d3b9a50358358834d4713766",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.5",
                 "ext-tokenizer": "*",
-                "php": "^7.2 || 8.0.*",
+                "php": "^7.3 || 8.0.*",
                 "phpspec/php-diff": "^1.0.0",
                 "phpspec/prophecy": "^1.9",
-                "sebastian/exporter": "^1.0 || ^2.0 || ^3.0 || ^4.0",
-                "symfony/console": "^3.4 || ^4.0 || ^5.0",
-                "symfony/event-dispatcher": "^3.4 || ^4.0 || ^5.0",
-                "symfony/finder": "^3.4 || ^4.0 || ^5.0",
-                "symfony/process": "^3.4 || ^4.0 || ^5.0",
-                "symfony/yaml": "^3.4 || ^4.0 || ^5.0"
+                "sebastian/exporter": "^3.0 || ^4.0",
+                "symfony/console": "^3.4 || ^4.4 || ^5.0",
+                "symfony/event-dispatcher": "^3.4 || ^4.4 || ^5.0",
+                "symfony/finder": "^3.4 || ^4.4 || ^5.0",
+                "symfony/process": "^3.4 || ^4.4 || ^5.0",
+                "symfony/yaml": "^3.4 || ^4.4 || ^5.0"
             },
             "conflict": {
                 "sebastian/comparator": "<1.2.4"
@@ -1069,7 +1069,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3.x-dev"
+                    "dev-main": "7.0.x-dev"
                 }
             },
             "autoload": {
@@ -1107,7 +1107,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2020-11-01T18:07:30+00:00"
+            "time": "2020-11-03T11:28:23+00:00"
         },
         {
             "name": "phpspec/prophecy",
