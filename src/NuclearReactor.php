@@ -7,7 +7,7 @@ class NuclearReactor
 {
     public function isDangerous(int $temperature): bool
     {
-        if ($temperature > 1000) {
+        if ($temperature >= 1000) {
             return true;
         } else {
             return false;
