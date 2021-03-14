@@ -1,4 +1,4 @@
-# Testing playgroud
+# Testing playground
 
 This is a simple playground repository for PHP, and it includes [PHPUnit](https://phpunit.de/), [Infection](https://infection.github.io/) and [PHPSpec](http://phpspec.net/) frameworks.
 
@@ -8,11 +8,15 @@ Build the Docker image:
 
 ```docker-compose build```
 
+Install dependencies:
+
+```docker-compose run --rm testing-playground composer install```
+
 Run PHPUnit tests:
 
 ```docker-compose run --rm testing-playground vendor/bin/phpunit```
 
-Run PHPUnit tests:
+Run PHPUnit tests with HTML coverage:
 
 ```docker-compose run --rm testing-playground vendor/bin/phpunit --coverage-html=var/coverage```
 
