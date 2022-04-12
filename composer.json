@@ -10,10 +10,10 @@
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.1"
     },
     "require-dev": {
-        "infection/infection": "^0.24.0",
+        "infection/infection": "~0.24",
         "phpspec/phpspec": "^7.0",
         "phpunit/phpunit": "^9.5"
     },
@@ -28,6 +28,9 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
     }
 }
