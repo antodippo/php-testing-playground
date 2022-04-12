@@ -6,27 +6,27 @@ This is a simple playground repository for PHP, and it includes [PHPUnit](https:
 
 Build the Docker image:
 
-```docker-compose build```
+```make build```
 
 Install dependencies:
 
-```docker-compose run --rm testing-playground composer install```
+```make dependencies```
 
 Run PHPUnit tests:
 
-```docker-compose run --rm testing-playground vendor/bin/phpunit```
+```make phpunit-test```
 
 Run PHPUnit tests with HTML coverage:
 
-```docker-compose run --rm testing-playground vendor/bin/phpunit --coverage-html=var/coverage```
+```make phpunit-test-coverage```
 
 Run Infection mutation tests:
 
-```docker-compose run --rm testing-playground vendor/bin/infection```
+```make infection```
 
 Run PHPSpec tests:
 
-```docker-compose run --rm testing-playground vendor/bin/phpspec run```
+```make phpspec```
 
 ### NuclearReactor example
 
