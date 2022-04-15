@@ -1,20 +1,23 @@
 build: ## Build Docker containers
 	docker-compose build --no-cache
 
-dependencies: ## Run Composer install
+dependencies: ## Run composer install
 	docker-compose run --rm testing-playground composer install
 
-phpunit-test: ## Run the testsuite
+phpunit-test: ## Run the testsuite with PHPUnit
 	docker-compose run --rm testing-playground vendor/bin/phpunit --testdox
 
-phpunit-test-coverage: ## Run the testsuite showing coverage and export it in html (in var/coverage)
+phpunit-test-coverage: ## Run the testsuite with PHPUnit showing coverage and export it in html (in var/coverage)
 	docker-compose run --rm testing-playground vendor/bin/phpunit --testdox --coverage-html=var/coverage --coverage-text
 
-infection: ## Run mutation testing with Infection adn export it in var/coverage
+infection: ## Run mutation testing with Infection and export it in var/coverage
 	docker-compose run --rm testing-playground vendor/bin/infection --threads=4
 
-phpspec: ## Run mutation testing with Infection
+phpspec: ## Run the specs with PHPSpec
 	docker-compose run --rm testing-playground vendor/bin/phpspec run
+
+churn-php: ## Check the churn index with Churn-PHP
+	docker-compose run --rm testing-playground vendor/bin/churn run src/
 
 shell: ## Bash into the container
 	docker-compose run --rm testing-playground bash
