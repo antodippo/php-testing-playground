@@ -13,7 +13,10 @@ class NuclearReactorWithExternalSensorTest extends TestCase
     public function testItTellsWhenDangerousWithMock(): void
     {
         $temperatureSensorMock = $this->createMock(TemperatureSensor::class);
-        $temperatureSensorMock->method('currentTemperature')->willReturn(2000);
+        $temperatureSensorMock
+            ->expects($this->once())
+            ->method('currentTemperature')
+            ->willReturn(2000);
 
         $nuclearReactor = new NuclearReactorWithExternalSensor($temperatureSensorMock);
         $this->assertTrue($nuclearReactor->isDangerous());
@@ -22,7 +25,10 @@ class NuclearReactorWithExternalSensorTest extends TestCase
     public function testItReturnsFalseWhenNotDangerousWithMock(): void
     {
         $temperatureSensorMock = $this->createMock(TemperatureSensor::class);
-        $temperatureSensorMock->method('currentTemperature')->willReturn(500);
+        $temperatureSensorMock
+            ->expects($this->once())
+            ->method('currentTemperature')
+            ->willReturn(500);
 
         $nuclearReactor = new NuclearReactorWithExternalSensor($temperatureSensorMock);
         $this->assertFalse($nuclearReactor->isDangerous());
