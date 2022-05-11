@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "bmitch/churn-php",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bmitch/churn-php.git",
-                "reference": "daea86b7f9c45bbaba379cba3d3d0b80885db8a4"
+                "reference": "532b26ed09f7477a8691ccbd50404c61eed0c816"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bmitch/churn-php/zipball/daea86b7f9c45bbaba379cba3d3d0b80885db8a4",
-                "reference": "daea86b7f9c45bbaba379cba3d3d0b80885db8a4",
+                "url": "https://api.github.com/repos/bmitch/churn-php/zipball/532b26ed09f7477a8691ccbd50404c61eed0c816",
+                "reference": "532b26ed09f7477a8691ccbd50404c61eed0c816",
                 "shasum": ""
             },
             "require": {
@@ -69,9 +69,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bmitch/churn-php/issues",
-                "source": "https://github.com/bmitch/churn-php/tree/1.6.1"
+                "source": "https://github.com/bmitch/churn-php/tree/1.7.0"
             },
-            "time": "2022-02-04T10:52:28+00:00"
+            "time": "2022-05-10T18:10:01+00:00"
         },
         {
             "name": "composer/pcre",
