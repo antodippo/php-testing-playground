@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "bmitch/churn-php",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bmitch/churn-php.git",
-                "reference": "532b26ed09f7477a8691ccbd50404c61eed0c816"
+                "reference": "43d465359c638d112cf246e4f46488c943828ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bmitch/churn-php/zipball/532b26ed09f7477a8691ccbd50404c61eed0c816",
-                "reference": "532b26ed09f7477a8691ccbd50404c61eed0c816",
+                "url": "https://api.github.com/repos/bmitch/churn-php/zipball/43d465359c638d112cf246e4f46488c943828ca5",
+                "reference": "43d465359c638d112cf246e4f46488c943828ca5",
                 "shasum": ""
             },
             "require": {
@@ -69,9 +69,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bmitch/churn-php/issues",
-                "source": "https://github.com/bmitch/churn-php/tree/1.7.0"
+                "source": "https://github.com/bmitch/churn-php/tree/1.7.1"
             },
-            "time": "2022-05-10T18:10:01+00:00"
+            "time": "2022-09-18T18:52:50+00:00"
         },
         {
             "name": "colinodell/json5",
