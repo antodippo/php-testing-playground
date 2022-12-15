@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "bmitch/churn-php",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bmitch/churn-php.git",
-                "reference": "532b26ed09f7477a8691ccbd50404c61eed0c816"
+                "reference": "43d465359c638d112cf246e4f46488c943828ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bmitch/churn-php/zipball/532b26ed09f7477a8691ccbd50404c61eed0c816",
-                "reference": "532b26ed09f7477a8691ccbd50404c61eed0c816",
+                "url": "https://api.github.com/repos/bmitch/churn-php/zipball/43d465359c638d112cf246e4f46488c943828ca5",
+                "reference": "43d465359c638d112cf246e4f46488c943828ca5",
                 "shasum": ""
             },
             "require": {
@@ -69,9 +69,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bmitch/churn-php/issues",
-                "source": "https://github.com/bmitch/churn-php/tree/1.7.0"
+                "source": "https://github.com/bmitch/churn-php/tree/1.7.1"
             },
-            "time": "2022-05-10T18:10:01+00:00"
+            "time": "2022-09-18T18:52:50+00:00"
         },
         {
             "name": "composer/pcre",
@@ -3366,16 +3366,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.1.4",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "3f39c04d2630c34019907b02f85672dac99f8659"
+                "reference": "50b2523c874605cf3d4acf7a9e2b30b6a440a016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/3f39c04d2630c34019907b02f85672dac99f8659",
-                "reference": "3f39c04d2630c34019907b02f85672dac99f8659",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/50b2523c874605cf3d4acf7a9e2b30b6a440a016",
+                "reference": "50b2523c874605cf3d4acf7a9e2b30b6a440a016",
                 "shasum": ""
             },
             "require": {
@@ -3409,7 +3409,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v6.1.4"
+                "source": "https://github.com/symfony/filesystem/tree/v6.2.0"
             },
             "funding": [
                 {
@@ -3425,7 +3425,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-02T16:17:38+00:00"
+            "time": "2022-11-20T13:01:27+00:00"
         },
         {
             "name": "symfony/finder",
