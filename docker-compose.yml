@@ -5,3 +5,13 @@ services:
     working_dir: /var/www/testing-playground
     volumes:
       - .:/var/www/testing-playground:delegated
+    depends_on:
+      - db
+    command: sh -c 'until nc -z db 3306; do echo "Waiting for db"; sleep 1; done'
+  db:
+    image: mysql:8
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testing-playground

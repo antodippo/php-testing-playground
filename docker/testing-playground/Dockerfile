@@ -2,6 +2,7 @@ FROM php:8.2-cli
 
 RUN apt-get update
 RUN apt-get install -y git zip unzip
+RUN docker-php-ext-install pdo_mysql
 
 RUN pecl channel-update pecl.php.net
 RUN pecl install xdebug && docker-php-ext-enable xdebug
