@@ -31,3 +31,7 @@ Run PHPSpec tests:
 ### NuclearReactor example
 
 This example wants to show how mutation testing work, and is taken from this article: https://medium.com/appsflyer/tests-coverage-is-dead-long-live-mutation-testing-7fd61020330e
+
+### Users repository example
+
+This example wants to show how you can write a contract test involving test doubles, see: https://medium.com/@antodippo/testing-at-the-boundaries-of-your-application-fc78145bee9
