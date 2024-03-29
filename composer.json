@@ -17,7 +17,7 @@
         "bmitch/churn-php": "^1.6",
         "infection/infection": "~0.24",
         "phpspec/phpspec": "^7.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^10.5"
     },
     "autoload": {
         "psr-4": {
